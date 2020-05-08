@@ -1,0 +1,12 @@
+<resources>
+    <style name="radioStyle">
+        <item name="android:button">@null</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/radio</item>
+    </style>
+</resources>

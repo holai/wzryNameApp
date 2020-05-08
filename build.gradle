@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId 'com.houlai.wzryname'
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        resConfigs "zh"
+//        ndk {
+//            //如果需要在模拟器上运行替换下行为
+////             abiFilters "armeabi","x86"
+//            abiFilters "armeabi"
+//        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true  // 不打包未引用资源
+            zipAlignEnabled true //Zipalign优化
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+}

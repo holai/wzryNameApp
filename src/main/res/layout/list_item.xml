@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:padding="5dp"
+            android:background="@drawable/group"
+            android:textSize="11sp"
+            android:id="@+id/txt"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+        <Button
+            android:layout_marginLeft="5dp"
+            android:textSize="11sp"
+            android:id="@+id/fz"
+            android:textColor="@color/secondary"
+            android:background="@drawable/item_button"
+            android:text="复制"
+            android:layout_width="50dp"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>
